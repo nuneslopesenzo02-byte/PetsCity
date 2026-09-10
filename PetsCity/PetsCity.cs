@@ -1,7 +1,7 @@
 ﻿
 namespace PetsCity
 {
-    class PetsCity
+    class Pedido
     {
         //ATRIBUTOS
         public string? NomePet { get; set; }

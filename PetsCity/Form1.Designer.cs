@@ -116,7 +116,6 @@
             lblNome.Size = new Size(40, 15);
             lblNome.TabIndex = 9;
             lblNome.Text = "Nome";
-            lblNome.Click += label6_Click;
             // 
             // lblIdade
             // 
@@ -145,7 +144,6 @@
             lblValorParcela.Size = new Size(45, 15);
             lblValorParcela.TabIndex = 12;
             lblValorParcela.Text = "Parcela";
-            lblValorParcela.Click += label9_Click;
             // 
             // btnCalcular
             // 
@@ -155,6 +153,7 @@
             btnCalcular.TabIndex = 14;
             btnCalcular.Text = "button2";
             btnCalcular.UseVisualStyleBackColor = true;
+            btnCalcular.Click += btnCalcular_Click;
             // 
             // lblStatus
             // 
@@ -186,7 +185,6 @@
             Controls.Add(lblQuantidadeBanhosMensais);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -205,7 +203,7 @@
         private Label lblIdade;
         private Label lblDescontoFidelidade;
         private Label lblValorParcela;
-        private Button button1;
+     //   private Button button1;
         private Button btnCalcular;
         private Label lblStatus;
     }
