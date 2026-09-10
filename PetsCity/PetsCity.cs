@@ -32,6 +32,10 @@ namespace PetsCity
             return ValorFinalBruto - desconto;
         }
 
+        public double CalcularValorParcela()
+        {
+            return ValorFinalPacote() / 3.0;
+        }
         public bool ValidarSeBrinde()
         {
             return (IdadeAnimal >= 8 && QuantidadeBanhosMensais >= 5) || (ValorFinalPacote() > 300.0);
