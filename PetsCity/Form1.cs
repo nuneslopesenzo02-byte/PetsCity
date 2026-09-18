@@ -2,18 +2,23 @@ namespace PetsCity
 {
     public partial class Form1 : Form
     {
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             try
             {
                 // =======================================================================================
-                // INSTANCIA(Criação do projeo na memória)
+                // INSTANCIA(CriaÃ§Ã£o do projeo na memÃ³ria)
                 // =======================================================================================
 
                 Pedido pedido = new Pedido();
 
                 // =======================================================================================
-                //PROPRIEDADE(ATRIBUIÇÃO DE DADOS)
+                //PROPRIEDADE(ATRIBUIÃ‡ÃƒO DE DADOS)
                 //PEGAMOS O TEXT DAS CAIXAS TEXTBOX E CONVERTEMOS
                 // =======================================================================================
                 pedido.NomePet = txtNomePet.Text;
@@ -39,20 +44,20 @@ namespace PetsCity
                 txtIdadeAnimal.Clear();
                 if (brindeAprovado)
                 {
-                    lblStatus.Text = "PARABÉNS! Você ganhou um brinde surpresa!";
+                    lblStatus.Text = "PARABÃ‰NS! VocÃª ganhou um brinde surpresa!";
                     lblStatus.ForeColor = Color.Green;
                 }
                 else
                 {
-                    lblStatus.Text = "Compra padrão realizada com sucesso!";
+                    lblStatus.Text = "Compra padrÃ£o realizada com sucesso!";
                     lblStatus.ForeColor = Color.Blue;
                 }
             }
             catch (FormatException)
             {
-                // Tratamento simples caso o usuario digite texto onde deveria ser número
-                MessageBox.Show("Preencha os campos numéricos corretamente!",
-                "Erro de Digitação",
+                // Tratamento simples caso o usuario digite texto onde deveria ser nÃºmero
+                MessageBox.Show("Preencha os campos numÃ©ricos corretamente!",
+                "Erro de DigitaÃ§Ã£o",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Warning);
 
@@ -61,6 +66,11 @@ namespace PetsCity
         }
 
         private void lblNome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
